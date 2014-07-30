@@ -1,7 +1,9 @@
-      </div> <!-- /page -->
-
-      <div id="footer">
-         <p><a href="http://github.com/mrknorton4007/Sabre">Sabre file manager</a> - version <?php echo sb_version; ?></p>
-      </div> <!-- /footer -->
-   </body>
-</html>
+<?php
+	echo "    </div> <!-- /page -->\n\n";
+	
+	echo "    <div id=\"footer\">\n";
+	echo "      <p><a href=\"https://github.com/mrknorton4007/Sabre\" target=\"_blank\">Sabre file manager</a> - version ".getversion()."</p>\n";
+	echo "    </div> <!-- /footer -->\n";
+	echo "  </body>\n";
+	echo "</html>";
+?>
