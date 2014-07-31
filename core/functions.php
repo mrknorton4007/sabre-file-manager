@@ -1,6 +1,11 @@
 <?php
 	// Sabre functions file
 
+	// Currnet Sabre version
+	function getversion(){
+		return "2.0.1";
+	}
+
 	// Byte conversion
 	function makeSize($fl){
 		$size = filesize($fl);
@@ -13,38 +18,22 @@
 		return (round($size,2) . " " . $units[$u]);
 	}
 
-	// Show an informative message
-	function msgInfo($text){
-		echo "<div class=\"alert alert-info\">";
-		echo "<p>".$text."</p></div>\n";
-	}
-
-	// Show a success message
-	function msgSuccess($text){
-		echo "<div class=\"alert alert-success\">";
-		echo "<p>".$text."</p></div>\n";
-	}
-
-	// Show an alert message
-	function msgAlert($text){
-		echo "<div class=\"alert alert-danger\">";
-		echo "<p>".$text."</p></div>\n";
-	}
-
-	// Show a warning message
-	function msgWarning($text){
-		echo "<div class=\"alert alert-warning\">";
-		echo "<p>".$text."</p></div>\n";
+	// Show a message
+	// msg_class = info, success, danger or warning
+	// msg_text = text of the message
+	function showMsg($msg_class, $msg_text){
+		echo "<div class=\"alert alert-".$msg_class."\">";
+		echo "<p>".$msg_text."</p></div>\n";
 	}
 
 	// Return PhpInfo() value
-	function getPhpinfo($variable){
-		return @get_cfg_var($variable);
+	function getPhpinfo($var){
+		return @get_cfg_var($var);
 	}
 
 	// Try to set PhpInfo() value
-	function setPhpinfo($variable, $new){
-		return @ini_set($variable, $new);
+	function setPhpinfo($var, $new){
+		return @ini_set($var, $new);
 	}
 
 	// Debug to web browser console
