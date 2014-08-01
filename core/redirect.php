@@ -1,5 +1,5 @@
 <?php
-
+	// Sabre security file and config check
 	session_start();
 
 	// Sabre installed?
@@ -8,7 +8,7 @@
 	} else {
 		// Default settings
 		define('sb_site_name', 'Sabre');
-		define('sb_version', '1.0.0');
+		define('sb_user_upload', 'false');
 		include("./core/pages/setup.php");
 		exit();
 	}
