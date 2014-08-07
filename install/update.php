@@ -1,5 +1,5 @@
 <?php
-	// Sabre updade config script
+	// Sabre update config script
 	session_start();
 
 	$site_name = htmlspecialchars($_POST['site_name']);
@@ -7,6 +7,7 @@
 	$public_file = $_POST['public_file'];
 	$password = md5($_POST['password']);
 	$user_upload = $_POST['user_upload'];
+	$user_delete = $_POST['user_delete'];
 	$date_style = htmlspecialchars($_POST['date_style']);
 	$maintenance = $_POST['maintenance'];
 
@@ -16,11 +17,11 @@
 
 	define('sb_site_name', '".$site_name."');
 	define('sb_root_path', '".dirname(getcwd())."');
-	define('sb_version', '1.0.0');
 	define('sb_file_path', '".$file_path."');
 	define('sb_public_file', '".$public_file."');
 	define('sb_password_hash', '".$password."');
 	define('sb_user_upload', '".$user_upload."');
+	define('sb_user_delete', '".$user_delete."');
 	define('sb_date_style', '".$date_style."');
 	define('sb_maintenance_mode', '".$maintenance."');
 
