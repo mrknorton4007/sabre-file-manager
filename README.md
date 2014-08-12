@@ -1,4 +1,4 @@
-# Sabre
+# Sabre file manager
 Sabre is a simple web file manager written in PHP with upload and password protection features.
 You can upload, download and delete file through a simple, clean and responsive web-based interface.
 There are a guest mode to allow free access to files and a restricted mode protected with a password.
