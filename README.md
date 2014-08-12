@@ -3,6 +3,8 @@ Sabre is a simple web file manager written in PHP with upload and password prote
 You can upload, download and delete file through a simple, clean and responsive web-based interface.
 There are a guest mode to allow free access to files and a restricted mode protected with a password.
 
+![Sabre File Manager preview](http://mrknorton.altervista.org/wp-content/uploads/2014/06/sabre-file-manager-full.jpg)
+
 
 ## Main Features
 * File list: show files in a specific folder
@@ -12,7 +14,7 @@ There are a guest mode to allow free access to files and a restricted mode prote
 * Modern style: clean and responsive interface
 * Config file editor: change settings directly from Sabre
 
-Coming soon: delete files, rename files, config editor, multi-language
+Coming soon: ~~delete files~~, rename files, ~~config editor~~, multi-language
 
 
 ## Installation
@@ -50,7 +52,6 @@ Is not protected and it can be used by an unauthorized user to rewrite the confi
 
 
 ### License
-This program is free software. You can redistribute it and/or modify it under the terms of 
-the GNU General Public License as published by the Free Software Foundation.
+This program is free software. You can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation.
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY.
 See the GNU General Public License for more details. 
